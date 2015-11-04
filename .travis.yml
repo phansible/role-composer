@@ -18,7 +18,7 @@ install:
 
   # Install required dependencies.
   - ansible-galaxy install -r requirements.yml
-  
+
 script:
   # Check the role/playbook's syntax.
   - "ansible-playbook -i tests/inventory tests/$PLAYBOOK --syntax-check"
@@ -32,3 +32,10 @@ script:
     | grep -q 'changed=0.*failed=0'
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
+
+  # Check if composer is installed and working.
+  - >
+    composer -V
+    | grep -q 'Composer version'
+    && (echo 'Composer is installed' && exit 0)
+    || (echo 'Composer is not installed' && exit 1)

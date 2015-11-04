@@ -1,0 +1,3 @@
+- src: "https://github.com/phansible/role-php"
+  version: "master"
+  name: "phansible.php"

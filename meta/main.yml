@@ -1,5 +1,6 @@
 ---
-dependencies: []
+dependencies:
+  - { role: phansible.php }
 
 galaxy_info:
   author: The Phansible Team & Contributors
@@ -7,10 +8,36 @@ galaxy_info:
   license: MIT
   min_ansible_version: 1.9
   platforms:
-  - name: Ubuntu
-    versions:
-    - precise
-    - trusty
+    - name: EL
+      versions:
+        - all
+    - name: GenericUNIX
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: opensuse
+      versions:
+        - all
+    - name: GenericBSD
+      versions:
+        - all
+    - name: FreeBSD
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: SLES
+      versions:
+        - all
+    - name: GenericLinux
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
   categories:
     - packaging
     - web

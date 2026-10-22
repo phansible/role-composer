@@ -1,6 +1,6 @@
 # Phansible Role: Composer
 
-[![Build Status](https://travis-ci.org/phansible/role-composer.svg?branch=master)](https://travis-ci.org/phansible/role-composer)
+[![CI](https://github.com/phansible/role-composer/actions/workflows/ci.yml/badge.svg)](https://github.com/phansible/role-composer/actions/workflows/ci.yml)
 
 An Ansible Role that installs [Composer](https://getcomposer.org/), the PHP Dependency Manager, on Ubuntu specifically created with [Phansible](http://phansible.com/) in mind.
 

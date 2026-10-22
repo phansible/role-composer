@@ -1,43 +1,21 @@
 ---
-dependencies:
-  - { role: phansible.php }
+dependencies: []
 
 galaxy_info:
   author: The Phansible Team & Contributors
-  description: An Ansible Role that installs Composer, the PHP Dependency Manager, on Ubuntu specifically created with Phansible in mind.
+  description: An Ansible Role that installs Composer, the PHP Dependency Manager, on Linux servers specifically created with Phansible in mind.
   license: MIT
-  min_ansible_version: 2.4
+  min_ansible_version: 2.15
   platforms:
-    - name: EL
-      versions:
-        - all
-    - name: GenericUNIX
-      versions:
-        - all
-    - name: Fedora
-      versions:
-        - all
-    - name: opensuse
-      versions:
-        - all
-    - name: GenericBSD
-      versions:
-        - all
-    - name: FreeBSD
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
-    - name: SLES
-      versions:
-        - all
-    - name: GenericLinux
-      versions:
-        - all
-    - name: Debian
-      versions:
-        - all
+  - name: Ubuntu
+    versions:
+    - jammy
+    - noble
+    - resolute
+  - name: Debian
+    versions:
+    - bookworm
+    - trixie
   galaxy_tags:
     - packaging
     - web
